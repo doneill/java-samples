@@ -4,10 +4,6 @@ import java.util.HashMap;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
 import com.jdoneill.retrofit.fulcrum.BuildConfig;
 import com.jdoneill.retrofit.fulcrum.data.FulcrumApi;
 
@@ -40,22 +36,6 @@ public class Controller implements Callback<HashMap<String, Object>>{
             
             String json = response.body().toString();
             System.out.println("User: " + json);
-
-            // JsonParser parser = new JsonParser();
-            // JsonElement jsonTree = parser.parse(json);
-            // if(jsonTree.isJsonObject()){
-            //     JsonObject jsonObject = jsonTree.getAsJsonObject();
-            //     JsonElement name = jsonObject.get("first_name");
-            //     System.out.println("Name: " + name.toString());
-            // }
-
-            // String json = (String) map.get("user");
-            // JsonElement jelement = new JsonParser().parse(json);
-            // JsonObject  jobject = jelement.getAsJsonObject();
-            // jobject = jobject.getAsJsonObject("email");
-            // JsonArray jarray = jobject.getAsJsonArray("translations");
-            // jobject = jarray.get(0).getAsJsonObject();
-            // String result = jobject.get("translatedText").getAsString();
 
         } else {
             System.out.println(response.errorBody());
