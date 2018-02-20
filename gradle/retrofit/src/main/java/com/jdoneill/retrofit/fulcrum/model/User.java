@@ -1,5 +1,5 @@
 
-package com.jdoneill.retrofit.fulcrum.data;
+package com.jdoneill.retrofit.fulcrum.model;
 
 import java.util.List;
 
