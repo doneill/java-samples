@@ -1,13 +1,20 @@
 package com.jdoneill.retrofit.fulcrum.data;
 
-public class Account {
-    public String user;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public String getUser(){
+public class Account {
+
+    @SerializedName("user")
+    @Expose
+    private User user;
+
+    public User getUser() {
         return user;
     }
 
-    public void setUser(String user) {
+    public void setUser(User user) {
         this.user = user;
     }
+
 }
