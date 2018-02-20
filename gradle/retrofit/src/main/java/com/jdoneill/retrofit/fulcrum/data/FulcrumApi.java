@@ -1,5 +1,7 @@
 package com.jdoneill.retrofit.fulcrum.data;
 
+import com.jdoneill.retrofit.fulcrum.model.Account;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;

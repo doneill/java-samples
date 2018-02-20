@@ -5,12 +5,12 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jdoneill.retrofit.fulcrum.BuildConfig;
-import com.jdoneill.retrofit.fulcrum.data.Account;
-import com.jdoneill.retrofit.fulcrum.data.Context;
 import com.jdoneill.retrofit.fulcrum.data.FulcrumApi;
-import com.jdoneill.retrofit.fulcrum.data.Plan;
-import com.jdoneill.retrofit.fulcrum.data.Role;
-import com.jdoneill.retrofit.fulcrum.data.User;
+import com.jdoneill.retrofit.fulcrum.model.Account;
+import com.jdoneill.retrofit.fulcrum.model.Context;
+import com.jdoneill.retrofit.fulcrum.model.Plan;
+import com.jdoneill.retrofit.fulcrum.model.Role;
+import com.jdoneill.retrofit.fulcrum.model.User;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
