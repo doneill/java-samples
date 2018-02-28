@@ -1,4 +1,5 @@
-# Gradle Java SE Test
+# Esri Callout
+Simple app using Esri ArcGIS Runtime for Java SDK and JavaFX to show lat/lon of mouse click on a Map.
 
 ## Clean the project
 
