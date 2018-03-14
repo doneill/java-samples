@@ -1,4 +1,4 @@
-# java-samples
+# Java Wanderings
 All apps can be run from [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/)
 
 ## Gradle
