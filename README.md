@@ -1,5 +1,5 @@
 # Java Wanderings
-All apps are intended to be run from [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/)
+All wanderings are intended to be run from [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/). 
 
 ## Gradle
 - [esri-callout](gradle/esri-callout)
