@@ -9,4 +9,4 @@ All wanderings are intended to be run from [Gradle](https://gradle.org/) or [Mav
 - [esri-callout](maven/esri-callout)
 
 ## Licensing
-A copy of the license is available in the repository's [LICENSE](LICENSE) file.
+Apache license is available in the repository's [LICENSE](LICENSE) file.
