@@ -21,3 +21,7 @@ dependencies {
 run {
     mainClassName = 'com.jdoneill.gradle.callout.ShowCallout'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8'
+}
