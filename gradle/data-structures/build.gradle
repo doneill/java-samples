@@ -1,0 +1,19 @@
+apply plugin: 'application'
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+
+}
+
+run {
+    mainClassName = 'com.jdoneill.datastructures.Main'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8'
+}
