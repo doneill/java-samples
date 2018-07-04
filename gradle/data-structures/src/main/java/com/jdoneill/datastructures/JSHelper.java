@@ -22,7 +22,6 @@ public class JSHelper {
         V8 runtime = V8.createV8Runtime();
 
         String script = getResourcePath("turf.js");
-        // String script = "/Users/dop/dev/github-doneill/java-samples/gradle/data-structures/src/main/resources/turf.js";
         runtime.executeScript(readFile(script));
 
         // traverse js
