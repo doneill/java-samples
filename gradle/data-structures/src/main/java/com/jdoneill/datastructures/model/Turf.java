@@ -9,7 +9,7 @@ public class Turf {
     // Instance Variables
     // ------------------------------------------------------------------------
 
-    private String mPath;
+    private String mScript;
 
     private V8 mRuntime;
 
@@ -19,14 +19,13 @@ public class Turf {
     // Constructors
     // ------------------------------------------------------------------------
 
-    public Turf(String scriptPath){
-        this.mPath = scriptPath;
-        setup(mPath);
+    public Turf(String script){
+        this.mScript = script;
+        setup(mScript);
     }
 
     public void release() {
         // release objects
-        // turfJs.release();
         mHelpers.release();
         mRuntime.release();
     }
