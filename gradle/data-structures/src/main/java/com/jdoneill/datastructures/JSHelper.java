@@ -1,7 +1,6 @@
 package com.jdoneill.datastructures;
 
-import com.eclipsesource.v8.V8;
-import com.eclipsesource.v8.V8Object;
+import com.jdoneill.datastructures.model.Turf;
 
 import org.apache.commons.io.IOUtils;
 
@@ -19,23 +18,15 @@ public class JSHelper {
         // get angle to convert
         double angle = Double.parseDouble(args[0]);
 
-        V8 runtime = V8.createV8Runtime();
-
         String script = getResourcePath("turf.js");
-        runtime.executeScript(readFile(script));
+        String script = readFile(path);
+        
+        Turf turf = new Turf(script);
+        double radians = turf.degrees2radians(angle);
+        turf.release();
 
-        // traverse js
-        V8Object turfJs = runtime.getObject("turf");
-        V8Object helpers = turfJs.getObject("helpers");
+        System.out.println(angle + " degrees = " + radians + " rad");
 
-        Object number = helpers.executeJSFunction("degrees2radians", angle);
-
-        System.out.println(angle + " degrees = " + number.toString() + " rad");
-
-        // release objects
-        turfJs.release();
-        helpers.release();
-        runtime.release();
     }
 
     // get js from resource
@@ -46,7 +37,6 @@ public class JSHelper {
         } catch (Exception e){
             return null;
         }
-        
     }
 
     // Read file content into string with - Files.lines(Path path, Charset cs)
