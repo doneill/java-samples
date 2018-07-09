@@ -32,7 +32,7 @@ public class Turf {
 
     public double degrees2radians(double angle) {
         Double radians = null; 
-        Object object = mHelpers.executeJSFunction("degrees2radians", angle);
+        Object object = mHelpers.executeJSFunction("degreesToRadians", angle);
 
         if (object instanceof Double) {
             radians = (Double) object;
