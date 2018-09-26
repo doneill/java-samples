@@ -1,5 +1,5 @@
 # Java Wanderings
-All modules are intended to be built and run from [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/). 
+All modules are intended to be built and run from [Gradle](gradle) or [Maven](maven). 
 
 
 ## SDK's
