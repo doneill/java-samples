@@ -18,7 +18,7 @@ public class JSHelper {
         // get angle to convert
         double angle = Double.parseDouble(args[0]);
 
-        String script = getResourcePath("turf.js");
+        String path = getResourcePath("turf.min.js");
         String script = readFile(path);
         
         Turf turf = new Turf(script);
