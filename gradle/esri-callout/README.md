@@ -1,5 +1,5 @@
 # Esri Callout
-Simple app using Esri ArcGIS Runtime for Java SDK and JavaFX to show lat/lon of mouse click on a Map.
+Simple app using [Esri ArcGIS Runtime for Java SDK](https://developers.arcgis.com/java/) to show lat/lon of mouse click on a Map.
 
 ## Clean the project
 
